@@ -1,174 +1,91 @@
 * {
-    list-style: none;
-    font-family: roboto;
-    text-decoration: none;
-}
-body {
-    background-color: #f4ede5;
-}
-.navegation {
-    display: flex;
+    font-family: hanken grotesk;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    font-weight: 200;
 }
-.navegation ul{
+.container {
     display: flex;
+    flex-direction: row;
+    width: 306px;
+    height: 525px;
+    background-image: linear-gradient(to bottom, #7b57ff, #6b4cf7, #5a41ef, #4736e7, #2e2bdf);
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(219, 211, 196);
+}
+.card h2{
+    font-size: 18px;
+    padding-bottom: -30px;
+}
+.circle {
+
+    height: 200px;
+    width: 200px;
     align-items: center;
-    gap: 3rem;
-    color: #77736e;
-    font: bold;
-    font-weight: 400;
-    text-decoration: none;
-    list-style: none;
+    border-radius: 50%;
+    background: rgb(36,33,202);
+    background: linear-gradient(180deg, rgba(36,33,202,1) 00%, rgba(78,33,202,1) 35%);
+    margin-left: 8px;
 }
-.navegation ul li {
-display: inline;
-position: relative;
+.circle h1 {
+    font-size: 80px;
+    text-align: center;
+    padding-top: 80px;
+    line-height: 1.5rem;
+
 }
-.navegation ul ul{
-    display:none;
-    position: absolute;
+.circle span{
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(179, 179, 179);
+}
+#resultColor {
+    width: 306px;
+    display: flex;
+    gap: 1rem;    
+}
+.summary{
+    width: 306px;
+    height: 425px;
+    display: inline;
+    float: left;
+    font-size: 18px;
     background-color: white;
 }
-.navegation ul li ul li img {
-    height: 14px;
+.text{
+    margin-left: 30px;
 }
-.navegation ul li:hover ul{
-    display:block;
-    position:fixed;
-    font-size: 15px;
-    margin-top: 6px;
-    width: 300px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-}
-.navegation ul ul li {
-    display: block;
-}
-.button {
-    padding: 15px 35px;
-    background-color: #133218;
+.button{
+    background-color: #303B5A;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 100px;
+    align-items: center;
+    border-radius: 25px;
     color: white;
-    border-radius: 4px;
-    font-weight: 500;
+    margin-left: 30px;
 }
-.home {
+.divisao {
     display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    padding:0 10%;
-    padding-bottom: 20px;
-}
-.home-text h1{
-    max-width: 200rem;
-    padding-right: .5rem;
-    margin-top: 70px;
-    font-size: 50px;
-    font-weight: 800;
-    max-height: 20rem;
-}
-.home-text h4 {
-    font-weight: 400;
-    color: #77736e;
-    max-height: 15rem ;
-    padding-bottom: 10px;
-    padding-top:8px;
-}
-.garota {
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 250px;
-}
-.loguinho{
-    height: 13px;
-    padding-right: .6rem;
-}
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-footer h4 {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding-left: 60px;
-    color: #77736e;
-    font-weight: 400;
-    justify-content: space-between;
-}
-footer ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-.logomarca {
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10px;
-
-    
-}
-span {
-    color:#ffb700;
-}
-.menu {
-    display: none;
 }
 
-@media (max-width:428px){
-
-    .navegation ul {
-        display: none;
+@media (max-width:375px) {
+    .divisao{
+        display:flex;
+        flex-direction: column;
+        width: 400px;
     }
-    .menu {
-        display: block;
-        margin-right: 50px;
+}
+.container{
+    width: 380px;
+}
+    .summary{
+        display: flex;
+        width: 380px;
     }
-    .garota {
-        display: none;
-    }
-    .home-text {
-        margin-top: 1px;
-        font-size: 15px;
-        margin-top: -30px;
-    }
-    .home-text h1 {
-        line-height: 55px;
-    }
-    .second-text{
-        margin-top: -40px;
-        font-size: 17px;
-    }
-    .text-next {
-        margin-top: 50px;
-        font-size: 17px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    footer h4{
-        text-align:left;
-        align-items: center;
-        justify-content: center;
-        font-size: 15px;
-        padding-left: 0px;
-    }
-    .logomarca{
-        width: 140px;
-        margin: 0;
-        margin-left: 10px;
-        padding-right:-10px;
-    }
-    .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    }
+#resultColor {
+    margin-right: 20px;
+}
+.button{
+    margin:0;
 }
